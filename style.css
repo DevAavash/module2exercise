@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+  background-image: url('images/bg.jpg');
+  background-size: cover;
+  color: black;
+
+}
+
+h1 {
+  text-align: center;
+  color: antiquewhite;
+  margin: 20px 0;
+
+}
+
+section {
+  width: 33.33%;
+  float: left;
+  position: relative;
+  padding: 15px;
+  border: 3px solid black;
+}
+
+.first {
+  background-color: aqua;
+
+}
+
+.second {
+  background-color: bisque;
+}
+
+.third {
+  background-color: blueviolet;
+}
+
+#hello1,
+#hello2,
+#hello3 {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  background: yellowgreen;
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+  .first,
+  .second {
+    width: 50%;
+  }
+
+  .third {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:767px) {
+  section {
+    width: 92%;
+    margin: 4%;
+
+
+
+  }
+
+
+}
